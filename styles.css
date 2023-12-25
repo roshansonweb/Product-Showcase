@@ -1,0 +1,301 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+nav li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* Add margin to position the branding to the left */
+}
+
+.apple-logo {
+    margin-right: 10px;
+    /* transform: rotate(-90deg); Rotate the logo 90 degrees counter-clockwise */
+}
+
+.branding img {
+    margin-right: 10px;
+}
+
+.branding h1 {
+    margin: 0; /* Remove any default margin to center the text */
+}
+
+#productShowcase {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 10px;
+    max-width: 877px; /* Adjust the max-width as needed */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#productInfo {
+    text-align: center;
+    margin-right: 20px;
+}
+
+#productImage {
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+
+.slider-container {
+    position: relative;
+    width: 100%;
+}
+
+.slider-image {
+    width: 100%;
+    height: auto;
+    display: block; /* Ensure the image takes the full width */
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+}
+
+.slider-btn:first-child {
+    left: 10px;
+}
+
+.slider-btn:last-child {
+    right: 10px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+#features {
+    display: flex;
+    justify-content: center;
+    background-color: #f8f8f8;
+    padding: 50px 20px;
+}
+
+.feature-item {
+    max-width: 70%;
+    text-align: left;
+    margin: 0% 37% 10% 0% ; /* Adjusted margin to move the features a little more to the left */
+}
+
+.feature-item h2{
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.feature-item ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.feature-item li,
+.overview p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.feature-item li strong {
+    color: #333;
+}
+
+.feature-item li::before {
+    content: "\2022"; /* Unicode character for a bullet point */
+    color: #f44336; /* Red color for the bullet point */
+    font-size: 20px;
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.overview button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Two-column layout for larger screens */
+@media (min-width: 768px) {
+    #productShowcase {
+        flex-direction: row-reverse; /* Reverse the order of flex items for larger screens */
+        justify-content: space-between;
+    }
+
+    #productInfo {
+        margin-left: 0;
+        margin-right: 20px; /* Add margin to separate from the slider window */
+    }
+
+    #productImage {
+        max-height: none; /* Remove maximum height for the image */
+    }
+}
+#gallery {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    max-width: 300px;
+    margin: 15px;
+    text-align: left;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+#pricing {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.pricing-card {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.discount {
+    font-size: 24px;
+    color: #f44336;
+}
+
+.discounted-price {
+    font-size: 36px;
+    color: #000;
+    font-weight: bold;
+}
+
+.mrp {
+    font-size: 16px;
+    color: #999;
+}
+
+.taxes {
+    font-size: 14px;
+    color: #333;
+}
+
+.emi {
+    font-size: 16px;
+    color: #333;
+}
+
+.emi-options {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+.offers,
+.partner-offers {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.offer-list,
+.partner-offer-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.offer-list li,
+.partner-offer-list li {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

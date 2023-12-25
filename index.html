@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>MacBook Showcase</title>
+</head>
+<body>
+    
+
+    <header>
+        <div class="branding">
+            <img src="apple-logo.png" alt="Apple Logo" width="40" height="40" class="apple-logo">
+            <h1>Macbook Air </h1>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#productShowcase">Product</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <!-- Add more sections as needed -->
+        </ul>
+    </nav>
+    
+    <section id="productShowcase">
+        <div id="productInfo">
+            <h2>MacBook Air</h2>
+            <p>The MacBook Air delivers powerful performance in a thin and light design.</p>
+            <p>Price: ₹80,990</p>
+            <button onclick="learnMore()">Learn More</button>
+        </div>
+        <div id="productImage" class="slider-container">
+            <button class="slider-btn" onclick="prevSlide()">❮</button>
+            <img src="macbook_air_1.jpg" alt="MacBook Air" class="slider-image" id="sliderImage" onload="loadImage(this)">
+            <button class="slider-btn" onclick="nextSlide()">❯</button>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="feature-item">
+            <h2>Key Features</h2>
+            <ul>
+                <li><strong>Processor:</strong> Apple M1</li>
+                <li><strong>Display:</strong> 33.78 cms (13.3 inches) LED-Backlit</li>
+                <li><strong>Memory:</strong> 8GB DDR4 RAM, 256GB SSD ROM</li>
+                <li><strong>OS:</strong> macOS Big Sur</li>
+                <li><strong>Warranty:</strong> 1 Year Onsite</li>
+            </ul>
+        </div>
+    </section>
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="image1.jpeg" alt="Image 1">
+                <p>Small chip <br>Giant leap</p>
+            </div>
+            <div class="gallery-item">
+                <img src="image2.jpeg" alt="Image 2">
+                <p>Retina display<br>Lifelike colours for unreal beauty.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="image3.png" alt="Image 3">
+                <p>13.3 inch Retina Diaplay</p>
+            </div>
+            <div class="gallery-item">
+                <img src="image4.jpg" alt="Image 4">
+                <p>We can do this whole day.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing">
+        <h2>Pricing</h2>
+        <div class="pricing-card">
+            <p class="discount">-13%</p>
+            <p class="discounted-price">₹80,990</p>
+            <p class="mrp">M.R.P.: ₹92,900</p>
+            <p class="taxes">Inclusive of all taxes</p>
+            <p class="emi">EMI starts at ₹3,927. No Cost EMI available</p>
+            <p class="emi-options">EMI options</p>
+            <p class="offers">Offers</p>
+            <ul class="offer-list">
+                <li>No Cost EMI</li>
+                <li>Upto ₹3,646.89 EMI interest savings on Amazon Pay ICICI Bank Credit Cards</li>
+                <!-- Add more offers if needed -->
+            </ul>
+            <p class="partner-offers">Partner Offers</p>
+            <ul class="partner-offer-list">
+                <li>Get GST invoice and save up to 28% on business purchases. Sign up for free</li>
+                <!-- Add more partner offers if needed -->
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Apple Inc.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
