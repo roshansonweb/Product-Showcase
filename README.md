@@ -29,3 +29,5 @@ Edit the HTML, CSS, and JavaScript files as needed.
 Save the files, and the changes will automatically reflect in the browser due to Live Server.
 
 Note: If you want to skip above steps and make it simple. Download the project folder and directly open the folder in any IDE for example Visual Studio Code. Try running "index.html" for output.
+
+Project is live at: https://roshansonweb.github.io/Product-Showcase/
